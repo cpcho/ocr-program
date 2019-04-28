@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <script type = "text/javascript" 
+     	src = "{{ url_for('static', filename='hello.js') }}" >	
+     </script>
+</head>
+<body>
+	<table border=1>
+		{% for k, v in result.items() %}
+			<tr>
+				<th> {{ k }}</th>
+				<td> {{ v }}</td>
+			</tr>
+		{% endfor %}
+	</table>
+	<hr>
+	<input type="button" onclick="sayHello()" value="Say Hello"/>
+</body>
+</html>

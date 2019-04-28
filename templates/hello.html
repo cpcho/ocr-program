@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+   <body>
+   		{% if record > 50 %}
+   			<h1> Your result, {{ record }},  is pass!</h1>
+   		{% else %}
+   			<h1>You got {{ record }}, which is lower than 50. Fail!</h1>
+   		{% endif %}
+   </body>
+</html>
